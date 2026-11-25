@@ -1,6 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Spatial and election data
+data/
+
 # dependencies
+.python-version
 /node_modules
 /.pnp
 .pnp.*
