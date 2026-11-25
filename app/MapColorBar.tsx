@@ -18,7 +18,7 @@ export default function MapColorBar({
   useEffect(() => {
     if (!svgRef.current) return;
 
-    const margin = { left: 6, right: 12 };
+    const margin = { left: 12, right: 12 };
     const barHeight = 12;
 
     const svg = d3.select(svgRef.current);
@@ -56,7 +56,12 @@ export default function MapColorBar({
 
     g.append('g')
       .attr('transform', `translate(0, ${barHeight + 2})`)
-      .call(d3.axisBottom(x).ticks(6));
+      .call(
+        d3
+          .axisBottom(x)
+          .ticks(6)
+          .tickFormat((d) => `${d}%`),
+      );
   }, [colorBarDomain]);
   return <svg ref={svgRef} width={width} height={height} />;
 }

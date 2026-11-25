@@ -75,6 +75,14 @@ export default function DataPanel({
   return (
     <aside className="w-2/7 flex flex-col shrink-0 overflow-y-auto border-l border-gray-400 text-black bg-slate-100 p-4">
       <h1 className="text-2xl font-bold">衆院選2026マップ</h1>
+      <p className="text-xs">
+        <i>By Daniel Henri</i>
+      </p>
+      <p className="text-xs">
+        <a href="https://github.com/biskwikman/election-map">
+          <i>click here for git repo...</i>
+        </a>
+      </p>
       <select
         className="rounded border border-gray-400 bg-white px-2 py-1"
         value={voteMetric}

@@ -1,5 +1,9 @@
 This is a web map I am currently developing to explore the results and voting patterns of the 2026 House of Representatives election in Japan.
 
+The data processing is all done in Python using Pandas. And the output used for the map is in PMTILES format.
+
+The user interface used MapLibre and D3 to visualize the data.
+
 To run this project. Do 'npm run dev' and go to localhost:3000.
 
 The 'pipeline' directory contains the script which prepares all the data, although the pre-processed data is not included in the repository because of its size.
