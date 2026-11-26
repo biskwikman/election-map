@@ -80,7 +80,9 @@ export default function DataPanel({
       </p>
       <p className="text-xs">
         <a href="https://github.com/biskwikman/election-map">
-          <i>click here for git repo...</i>
+          <u>
+            <i>click here for git repo...</i>
+          </u>
         </a>
       </p>
       <select
